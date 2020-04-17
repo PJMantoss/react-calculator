@@ -24,8 +24,11 @@ export class App extends Component {
     }
   }
 
-  maxDigitWarning = () => {}
-  
+  maxDigitWarning = () => {
+    this.setState({});
+    setTimeout():
+  }
+
   render() {
     return (
       <div>

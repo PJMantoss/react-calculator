@@ -29,7 +29,9 @@ export class App extends Component {
       currentVal: "Digit Limit Met",
       prevVal: this.state.currentVal
     });
-    setTimeout()
+    setTimeout(() => this.setState({
+      currentVal: this.state.prevVal
+    }))
   }
 
   render() {

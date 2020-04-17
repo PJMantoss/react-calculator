@@ -31,7 +31,7 @@ export class App extends Component {
     });
     setTimeout(() => this.setState({
       currentVal: this.state.prevVal
-    }))
+    }), 1000)
   }
 
   render() {

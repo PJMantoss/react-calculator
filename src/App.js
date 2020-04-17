@@ -16,8 +16,8 @@ export class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      currentVal: 0,
-      prevVal: 0,
+      currentVal: "0",
+      prevVal: "0",
       formula: "",
       currentSign: "pos",
       lastClicked: ""

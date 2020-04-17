@@ -25,8 +25,11 @@ export class App extends Component {
   }
 
   maxDigitWarning = () => {
-    this.setState({});
-    setTimeout():
+    this.setState({
+      currentVal: "Digit Limit Met",
+      prevVal: this.state.currentVal
+    });
+    setTimeout()
   }
 
   render() {

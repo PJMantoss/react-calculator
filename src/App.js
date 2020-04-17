@@ -13,6 +13,10 @@ const operator = /[x/+-]/,
     },
 
 export class App extends Component {
+  constructor(){
+    super();
+    this.state = {}
+  }
   render() {
     return (
       <div>

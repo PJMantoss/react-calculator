@@ -23,6 +23,9 @@ export class App extends Component {
       lastClicked: ""
     }
   }
+
+  maxDigitWarning = () => {}
+  
   render() {
     return (
       <div>

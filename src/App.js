@@ -65,7 +65,7 @@ export class App extends Component {
         this.setState({ formula: prevVal + value });
       } else if(!endsWithOperator.test(formula)){
         this.setState({
-          prevVal: formular,
+          prevVal: formula,
           formula: formula + value
         });
       } else if(!endsWithNegativeSign.test(formula)){
@@ -76,6 +76,29 @@ export class App extends Component {
         this.setState({
           formula: prevVal + value
         });
+      }
+    }
+  }
+
+  handleNumbers = e => {
+    if(!this.state.currentVal.includes('Limit')){
+      const { currentVal, formula, evaluated } = this.state;
+      const value = e.target.value;
+      this.setState({
+        evaluated: false
+      });
+      if(currentVal.length > 21){
+        this.maxDigitWarning();
+      } else if(evaluated){
+        this.setState({
+          currentVal: value,
+          formula: value !== "0" ? value : ""
+        });
+      } else {
+        this.setState({
+          currentVal: currentVal === 0 || isOperator.test(currentVal) ? value : currentVal + value,
+          formula: 
+        })
       }
     }
   }

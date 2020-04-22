@@ -97,8 +97,12 @@ export class App extends Component {
       } else {
         this.setState({
           currentVal: currentVal === 0 || isOperator.test(currentVal) ? value : currentVal + value,
-          formula: 
-        })
+          formula: currentVal === "0" && value === "0" 
+          ? formula === "" ? value : formula 
+          : /([^.0-9]0|^0)$/.test(formula) 
+            ? formula.slice(0, -1) + value 
+            : formula + value
+        });
       }
     }
   }

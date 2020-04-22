@@ -60,6 +60,19 @@ export class App extends Component {
         currentVal: value,
         evaluated: false
       });
+
+      if (evaluated){
+        this.setState({ formula: prevVal + value });
+      } else if(!endsWithOperator.test(formula)){
+        this.setState({
+          prevVal: formular,
+          formula: formula + value
+        });
+      } else if(!endsWithNegativeSign.test(formula)){
+        this.setState({
+          formula: (endsWithNegativeSign.test(formula + value) ? formula : prevVal) + value
+        })
+      }
     }
   }
 

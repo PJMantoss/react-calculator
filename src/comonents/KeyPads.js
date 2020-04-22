@@ -33,16 +33,65 @@ const KeyPads = (props) => {
                 x
             </button>
 
-            <button>7</button>
+            <button
+                id="seven" 
+                onClick={this.props.numbers}  
+                value="7"
+            >
+                7
+            </button>
 
-            <button>8</button>
+            <button
+                id="eight" 
+                onClick={this.props.numbers}  
+                value="8"
+            >
+                8
+            </button>
 
-            <button>9</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button
+                id="nine" 
+                onClick={this.props.numbers}  
+                value="9"
+            >
+                9
+            </button>
+
+            <button
+                id="subtract" 
+                onClick={this.props.operators} 
+                style={operatorStyle} 
+                value="-"
+            >
+                -
+            </button>
+
+            <button
+                id="four" 
+                onClick={this.props.numbers}  
+                value="4"
+            >
+                4
+            </button>
+
+            <button
+                id="five" 
+                onClick={this.props.numbers}  
+                value="5"
+            >
+                5
+            </button>
+
+            <button
+                id="six" 
+                onClick={this.props.numbers}  
+                value="6"
+            >
+                6
+            </button>
+
             <button>+</button>
+
             <button>1</button>
             <button>2</button>
             <button>3</button>

@@ -52,6 +52,17 @@ export class App extends Component {
     }
   }
 
+  handleOperators = e => {
+    if(!this.state.currentVal.includes("Limit")){
+      const value = e.target.value;
+      const { formula, prevVal, evaluated } = this.state;
+      this.setState({
+        currentVal: value,
+        evaluated: false
+      });
+    }
+  }
+
   render() {
     return (
       <div>

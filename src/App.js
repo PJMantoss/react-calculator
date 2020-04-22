@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Formula from './components/Formula.js';
+import KeyPads from './components/KeyPads.js';
+import Result from './comonents/Result.js';
+import '/App.css';
 
 // variables
 const operator = /[x/+-]/, 
@@ -10,9 +14,9 @@ const operator = /[x/+-]/,
       position: "absolute",
       height: 130,
       bottom: 5
-    },
+    }
 
-export class App extends Component {
+class App extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -96,7 +100,7 @@ export class App extends Component {
         });
       } else {
         this.setState({
-          currentVal: currentVal === 0 || isOperator.test(currentVal) ? value : currentVal + value,
+          currentVal: currentVal === 0 || operator.test(currentVal) ? value : currentVal + value,
           formula: currentVal === "0" && value === "0" 
           ? formula === "" ? value : formula 
           : /([^.0-9]0|^0)$/.test(formula) 

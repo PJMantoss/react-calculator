@@ -15,7 +15,7 @@ const KeyPads = (props) => {
             <button 
                 className="jumbo" 
                 id="clear" 
-                onClick={this.props.initialize} 
+                onClick={props.initialize} 
                 style={clearStyle} 
                 value="AC"
             >
@@ -24,7 +24,7 @@ const KeyPads = (props) => {
 
             <button 
                 id="divide" 
-                onClick={this.props.operators} 
+                onClick={props.operators} 
                 style={operatorStyle} 
                 value="/"
             >
@@ -33,7 +33,7 @@ const KeyPads = (props) => {
 
             <button
                 id="multiply" 
-                onClick={this.props.operators} 
+                onClick={props.operators} 
                 style={operatorStyle} 
                 value="x"
             >
@@ -42,7 +42,7 @@ const KeyPads = (props) => {
 
             <button
                 id="seven" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="7"
             >
                 7
@@ -50,7 +50,7 @@ const KeyPads = (props) => {
 
             <button
                 id="eight" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="8"
             >
                 8
@@ -58,7 +58,7 @@ const KeyPads = (props) => {
 
             <button
                 id="nine" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="9"
             >
                 9
@@ -66,7 +66,7 @@ const KeyPads = (props) => {
 
             <button
                 id="subtract" 
-                onClick={this.props.operators} 
+                onClick={props.operators} 
                 style={operatorStyle} 
                 value="-"
             >
@@ -75,7 +75,7 @@ const KeyPads = (props) => {
 
             <button
                 id="four" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="4"
             >
                 4
@@ -83,7 +83,7 @@ const KeyPads = (props) => {
 
             <button
                 id="five" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="5"
             >
                 5
@@ -91,7 +91,7 @@ const KeyPads = (props) => {
 
             <button
                 id="six" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="6"
             >
                 6
@@ -99,7 +99,7 @@ const KeyPads = (props) => {
 
             <button
                 id="add" 
-                onClick={this.props.operators} 
+                onClick={props.operators} 
                 style={operatorStyle} 
                 value="+"
             >
@@ -108,7 +108,7 @@ const KeyPads = (props) => {
 
             <button
                 id="one" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="1"
             >
                 1
@@ -116,7 +116,7 @@ const KeyPads = (props) => {
 
             <button
                 id="two" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="2"
             >
                 2
@@ -124,7 +124,7 @@ const KeyPads = (props) => {
 
             <button
                 id="three" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="3"
             >
                 3
@@ -133,7 +133,7 @@ const KeyPads = (props) => {
             <button
                 className="jumbo"
                 id="zero" 
-                onClick={this.props.numbers}  
+                onClick={props.numbers}  
                 value="0"
             >
                 0
@@ -141,7 +141,7 @@ const KeyPads = (props) => {
 
             <button
                 id="decimal" 
-                onClick={this.props.decimal}  
+                onClick={props.decimal}  
                 value="."
             >
                 .
@@ -149,7 +149,7 @@ const KeyPads = (props) => {
 
             <button
                 id="equals" 
-                onClick={this.props.evaluate} 
+                onClick={props.evaluate} 
                 style={equalsStyle} 
                 value="="
             >

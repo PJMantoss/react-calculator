@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Result = (props) => {
+export const Result = props => {
     return (
         <div className="outputScreen" id="display">
-            {this.props.currentValue}
+            {props.currentValue}
         </div>
     )
 }

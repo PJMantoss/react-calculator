@@ -34,6 +34,15 @@ export class App extends Component {
     }), 1000)
   }
 
+  handleEvaluate = () => {
+    if(!this.state.currentVal.includes('Limit')){
+      let expression = this.state.formular;
+      while(endsWithOperator.test(expression)){
+        expression = expression.slice(0, -1);
+      }
+    }
+  }
+
   render() {
     return (
       <div>

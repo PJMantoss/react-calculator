@@ -125,9 +125,25 @@ export class App extends Component {
         this.setState({
           currentVal: "0.",
           formula: this.state.formula + "0."
-        })
+        });
+      } else {
+        this.setState({
+          currentVal: this.state.formula.match(/(-?\d+\.?\d*)$/)[0] + ".",
+          formula: this.state.formula + "."
+        });
       }
     }
+  }
+
+  initialize = () => {
+    this.setState({
+      currentVal: "0",
+      prevVal: "0",
+      formula: "",
+      currentSign: "pos",
+      lastClicked: "",
+      evaluated: false
+    });
   }
 
   render() {

@@ -15,14 +15,28 @@ const KeyPads = (props) => {
                 AC
             </button>
 
-            <button>/</button>
+            <button 
+                id="divide" 
+                onClick={this.props.operators} 
+                style={operatorStyle} 
+                value="/"
+            >
+                /
+            </button>
 
-            <button>x</button>
+            <button
+                id="multiply" 
+                onClick={this.props.operators} 
+                style={operatorStyle} 
+                value="x"
+            >
+                x
+            </button>
 
             <button>7</button>
 
             <button>8</button>
-            
+
             <button>9</button>
             <button>-</button>
             <button>4</button>

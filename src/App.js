@@ -72,6 +72,10 @@ export class App extends Component {
         this.setState({
           formula: (endsWithNegativeSign.test(formula + value) ? formula : prevVal) + value
         })
+      } else if(value !== "-"){
+        this.setState({
+          formula: prevVal + value
+        });
       }
     }
   }

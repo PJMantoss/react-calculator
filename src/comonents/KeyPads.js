@@ -2,6 +2,13 @@ import React from 'react'
 
 const clearStyle = { background: "#ac3939" };
 
+const equalsStyle = {
+    background: "#004466",
+    position: "absolute",
+    height: 130,
+    bottom: 5
+  };
+
 const KeyPads = (props) => {
     return (
         <div>
@@ -143,7 +150,7 @@ const KeyPads = (props) => {
             <button
                 id="equals" 
                 onClick={this.props.evaluate} 
-                style={operatorStyle} 
+                style={equalsStyle} 
                 value="="
             >
                 =

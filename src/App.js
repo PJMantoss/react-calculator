@@ -7,13 +7,7 @@ import '/App.css';
 // variables
 const operator = /[x/+-]/, 
     endsWithOperator = /[x+-/]$/, 
-    endsWithNegativeSign = /[x/+]-$/,
-    equalStyle = {
-      background: "#004466",
-      position: "absolute",
-      height: 130,
-      bottom: 5
-    }
+    endsWithNegativeSign = /[x/+]-$/;
 
 class App extends Component {
   constructor(props){

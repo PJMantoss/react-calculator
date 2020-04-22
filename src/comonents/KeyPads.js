@@ -5,11 +5,24 @@ const clearStyle = { background: "#ac3939" };
 const KeyPads = (props) => {
     return (
         <div>
-            <button>AC</button>
+            <button 
+                className="jumbo" 
+                id="clear" 
+                onClick={this.props.initialize} 
+                style={clearStyle} 
+                value="AC"
+            >
+                AC
+            </button>
+
             <button>/</button>
+
             <button>x</button>
+
             <button>7</button>
+
             <button>8</button>
+            
             <button>9</button>
             <button>-</button>
             <button>4</button>

@@ -107,6 +107,16 @@ export class App extends Component {
     }
   }
 
+  handleDecimal = () => {
+    if(this.state.evaluated === true){
+      this.setState({
+        currentVal: "0.",
+        formula: "0.",
+        evaluated: false
+      })
+    }
+  }
+
   render() {
     return (
       <div>

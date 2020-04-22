@@ -149,7 +149,11 @@ export class App extends Component {
   render() {
     return (
       <div>
-        
+        <div className="calculator">
+          <Formula formula={this.state.formula.replace(/x/g, ".")} />
+          <Result currentValue={this.state.currentVal} />
+          <KeyPads />
+        </div>
       </div>
     )
   }

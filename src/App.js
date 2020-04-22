@@ -114,6 +114,19 @@ export class App extends Component {
         formula: "0.",
         evaluated: false
       })
+    } else if(!this.state.currentVal.includes(".") && !this.state.currentVal.includes("Limit")){
+      this.setState({evaluated: false});
+      if(this.state.currentVal.length > 21){
+        this.maxDigitWarning();
+      } else if(
+        endsWithOperator.test(this.state.formula) || 
+        (this.state.currentVal === "0" && this.state.formula === "")
+      ){
+        this.setState({
+          currentVal: "0.",
+          formula: this.state.formula + "0."
+        })
+      }
     }
   }
 

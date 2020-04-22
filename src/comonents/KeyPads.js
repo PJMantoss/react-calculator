@@ -90,13 +90,50 @@ const KeyPads = (props) => {
                 6
             </button>
 
-            <button>+</button>
+            <button
+                id="add" 
+                onClick={this.props.operators} 
+                style={operatorStyle} 
+                value="+"
+            >
+                +
+            </button>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>0</button>
+            <button
+                id="one" 
+                onClick={this.props.numbers}  
+                value="1"
+            >
+                1
+            </button>
+
+            <button
+                id="two" 
+                onClick={this.props.numbers}  
+                value="2"
+            >
+                2
+            </button>
+
+            <button
+                id="three" 
+                onClick={this.props.numbers}  
+                value="3"
+            >
+                3
+            </button>
+
+            <button
+                className="jumbo"
+                id="zero" 
+                onClick={this.props.numbers}  
+                value="0"
+            >
+                0
+            </button>
+
             <button>.</button>
+
             <button>=</button>
         </div>
     )

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const clearStyle = { background: "#ac3939" };
-
-const equalsStyle = {
+const clearStyle = { background: "#ac3939" },
+ equalsStyle = {
     background: "#004466",
     position: "absolute",
     height: 130,
     bottom: 5
-  };
+  },
+  operatorStyle = { background: "#666666" };
 
 const KeyPads = (props) => {
     return (

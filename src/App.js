@@ -152,7 +152,13 @@ export class App extends Component {
         <div className="calculator">
           <Formula formula={this.state.formula.replace(/x/g, ".")} />
           <Result currentValue={this.state.currentVal} />
-          <KeyPads />
+          <KeyPads 
+              decimal={this.handleDecimal} 
+              evaluate={this.handleEvaluate} 
+              initialize={this.initialize} 
+              numbers={this.handleNumbers} 
+              operators={this.handleOperators} 
+          />
         </div>
       </div>
     )

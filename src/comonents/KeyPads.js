@@ -132,9 +132,22 @@ const KeyPads = (props) => {
                 0
             </button>
 
-            <button>.</button>
+            <button
+                id="decimal" 
+                onClick={this.props.decimal}  
+                value="."
+            >
+                .
+            </button>
 
-            <button>=</button>
+            <button
+                id="equals" 
+                onClick={this.props.evaluate} 
+                style={operatorStyle} 
+                value="="
+            >
+                =
+            </button>
         </div>
     )
 }

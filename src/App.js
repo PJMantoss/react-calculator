@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Formula from './components/Formula.js';
 import KeyPads from './components/KeyPads.js';
-import Result from './comonents/Result.js';
+import Result from './components/Result.js';
+import Formula from './components/Formula.js'
 import '/App.css';
 
 // variables

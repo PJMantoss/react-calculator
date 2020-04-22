@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Formula = (props) => {
+const Formula = (props) => {
     return (
         <div className="formulaScreen">
             {props.formula}
         </div>
     )
 }
+
+export default Formula;

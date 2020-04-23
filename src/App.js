@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   handleEvaluate = () => {
-    if(!this.state.currentVal.includes('Limit')){
+    if(!this.state.currentVal.includes("Limit")){
       let expression = this.state.formula;
       while(endsWithOperator.test(expression)){
         expression = expression.slice(0, -1);
@@ -94,7 +94,7 @@ class App extends Component {
         });
       } else {
         this.setState({
-          currentVal: currentVal === 0 || operator.test(currentVal) ? value : currentVal + value,
+          currentVal: currentVal === "0" || operator.test(currentVal) ? value : currentVal + value,
           formula: currentVal === "0" && value === "0" 
           ? formula === "" ? value : formula 
           : /([^.0-9]0|^0)$/.test(formula) 
@@ -149,7 +149,7 @@ class App extends Component {
       <div>
         <div className="calculator">
           <Formula formula={this.state.formula.replace(/x/g, ".")} />
-          <Result currentValue={this.state.currentVal} />
+          <Result id="display" currentValue={this.state.currentVal} />
           <KeyPads 
               decimal={this.handleDecimal} 
               evaluate={this.handleEvaluate} 

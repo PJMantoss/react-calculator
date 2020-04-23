@@ -49,25 +49,6 @@ button {
   cursor: default;
 }
 
-@media (max-width: 900px){
-  .calculator {
-    border: 1px;
-  }
-
-  .formulaScreen {
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  .outputScreen {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  button {
-    font-size: 18px;
-  }
-}
 
 button:hover{
   color: black;
@@ -100,4 +81,32 @@ button:hover{
 .love > span > a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 900px){
+  .calculator {
+    border: 1px;
+  }
+
+  .formulaScreen {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .outputScreen {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .love > span {
+    font-size: 14px;
+  }
+
+  .love > img {
+    width: 20px;
+  }
 }

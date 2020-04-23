@@ -33,7 +33,7 @@ class App extends Component {
 
   handleEvaluate = () => {
     if(!this.state.currentVal.includes('Limit')){
-      let expression = this.state.formular;
+      let expression = this.state.formula;
       while(endsWithOperator.test(expression)){
         expression = expression.slice(0, -1);
       }

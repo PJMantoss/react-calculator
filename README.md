@@ -1,3 +1,8 @@
+React Calculator is a simple client side app built with React and Sass. 
+
+Date: 22-Apr-2020
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

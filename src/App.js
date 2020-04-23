@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import KeyPads from './components/KeyPads.js';
 import Result from './components/Result.js';
-import Formula from './components/Formula.js'
+import Formula from './components/Formula.js';
+import ReactFCCtest from 'react-fcctest';
 import './App.scss';
 
 // variables
@@ -162,6 +163,7 @@ class App extends Component {
             <img src="https://img.icons8.com/dusk/64/000000/like.png" alt="love"/> 
             <span>by <a href="https://github.com/PJMantoss" target="_blank">Mantoss</a></span>
         </div>
+        <ReactFCCtest />
       </div>
     )
   }

@@ -149,7 +149,7 @@ class App extends Component {
       <div>
         <div className="calculator">
           <Formula formula={this.state.formula.replace(/x/g, ".")} />
-          <Result currentValue={this.state.currentVal} />
+          <Result currentValue={this.state.currentVal}/>
           <KeyPads 
               decimal={this.handleDecimal} 
               evaluate={this.handleEvaluate} 

@@ -58,3 +58,26 @@ button:hover{
 .jumbo {
   width: 160px;
 }
+
+.love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love > span {
+  font-family: digital;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.love > img {
+  width: 24px;
+  padding: 10px;
+}
+
+.love > span > a {
+  text-decoration: none;
+  color: black;
+}

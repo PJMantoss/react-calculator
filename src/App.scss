@@ -47,3 +47,9 @@ button {
   font-size: 20px;
   cursor: default;
 }
+
+button:hover{
+  color: black;
+  outline: .05em solid grey;
+  z-index: 3;
+}

@@ -15,11 +15,19 @@
 
 .formulaScreen {
   min-height: 20px;
-  font-family: digital;
+  font-family: "Digital";
   font-size: 20px;
   line-height: 20px;
   color: yellow;
   text-align: right;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.outputScreen {
+  text-align: right;
+  color: white;
+  font-family: "Digital";
+  font-size: 29px;
+  line-height: 35px;
 }

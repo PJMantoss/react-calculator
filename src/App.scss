@@ -15,7 +15,7 @@
 
 .formulaScreen {
   min-height: 20px;
-  font-family: "Digital";
+  font-family: digital;
   font-size: 20px;
   line-height: 20px;
   color: yellow;
@@ -27,7 +27,15 @@
 .outputScreen {
   text-align: right;
   color: white;
-  font-family: "Digital";
+  font-family: digital;
   font-size: 29px;
   line-height: 35px;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
 }

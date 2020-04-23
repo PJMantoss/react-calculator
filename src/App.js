@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import KeyPads from './components/KeyPads.js';
 import Result from './components/Result.js';
 import Formula from './components/Formula.js'
-import './App.css';
+import './App.scss';
 
 // variables
 const operator = /[x/+-]/, 
